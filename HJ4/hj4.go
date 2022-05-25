@@ -21,7 +21,7 @@ func main() {
 				i = i + 8
 			} else {
 				// Length is less than 8, append 0's to the end
-				temp := line[i:len(line)]
+				temp := line[i:]
 				end := len(line) - i
 				for j := 0; j < 8-end; j++ {
 					temp = temp + "0"
